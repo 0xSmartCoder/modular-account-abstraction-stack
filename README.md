@@ -46,6 +46,6 @@ On zkSync, AA is handled natively by the protocol.
 forge install
 forge build
 forge test
-
+```
 ## 👨‍💻 Built by
 [Abdullah Amr](https://github.com/0xSmartCoder)

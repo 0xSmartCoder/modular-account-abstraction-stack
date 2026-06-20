@@ -1,66 +1,49 @@
-## Foundry
+# Account Abstraction Multichain Wallet
 
-**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
+This project is a smart wallet built using Account Abstraction on both **Ethereum (ERC-4337)** and **zkSync**.
 
-Foundry consists of:
+It allows users to interact with blockchain in a more flexible way using smart contract wallets instead of normal EOAs.
 
-- **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
-- **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
-- **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
-- **Chisel**: Fast, utilitarian, and verbose solidity REPL.
+---
 
-## Documentation
+## 🚀 Features
 
-https://book.getfoundry.sh/
+- Smart contract wallet (Account Abstraction)
+- Ethereum ERC-4337 support
+- zkSync native Account Abstraction
+- Gasless transactions (paymaster support)
+- Modular wallet design
+- Foundry-based testing
 
-## Usage
+---
 
-### Build
+## 🧠 How it works
 
-```shell
-$ forge build
-```
+Instead of using a normal wallet (EOA), users interact through a **Smart Account**.
 
-### Test
+Flow:
+User → UserOperation → EntryPoint → Smart Account → Execution
 
-```shell
-$ forge test
-```
+On zkSync, AA is handled natively by the protocol.
 
-### Format
+---
 
-```shell
-$ forge fmt
-```
+## 🛠 Tech Stack
 
-### Gas Snapshots
+- Solidity
+- Foundry
+- Ethereum (ERC-4337)
+- zkSync Era
+---
 
-```shell
-$ forge snapshot
-```
 
-### Anvil
+---
 
-```shell
-$ anvil
-```
+## ⚙️ Setup
 
-### Deploy
+```bash
+forge install
+forge build
+forge test
 
-```shell
-$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
-```
-
-### Cast
-
-```shell
-$ cast <subcommand>
-```
-
-### Help
-
-```shell
-$ forge --help
-$ anvil --help
-$ cast --help
-```
+Built by Abdullah Amr

@@ -39,6 +39,7 @@ On zkSync, AA is handled natively by the protocol.
 
 ---
 
+```md id="p9x4kd"
 ## ⚙️ Setup
 
 ```bash
@@ -46,4 +47,5 @@ forge install
 forge build
 forge test
 
-Built by Abdullah Amr
+## 👨‍💻 Built by
+[Abdullah Amr](https://github.com/0xSmartCoder)

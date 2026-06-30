@@ -1,6 +1,6 @@
 # Account Abstraction Multichain Wallet
 
-Ethereum
+``` Ethereum
 UserOperation
       │
       ▼
@@ -24,6 +24,7 @@ Transaction
       │
       ▼
  Smart Contract
+```
 
 This project is a smart wallet built using Account Abstraction on both **Ethereum (ERC-4337)** and **zkSync**.
 

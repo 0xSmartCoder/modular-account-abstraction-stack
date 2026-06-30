@@ -1,9 +1,41 @@
 # Account Abstraction Multichain Wallet
 
+Ethereum
+UserOperation
+      │
+      ▼
+ EntryPoint
+      │
+      ▼
+ MinimalAccount
+      │
+      ▼
+ Smart Contract
+
+
+zkSync
+Transaction
+      │
+      ▼
+ Bootloader
+      │
+      ▼
+ ZkMinimalAccount
+      │
+      ▼
+ Smart Contract
+
 This project is a smart wallet built using Account Abstraction on both **Ethereum (ERC-4337)** and **zkSync**.
 
 It allows users to interact with blockchain in a more flexible way using smart contract wallets instead of normal EOAs.
 
+# Note
+
+The Ethereum ERC-4337 implementation is temporarily disabled due to Foundry/zkSync compiler compatibility issues while both implementations are maintained in the same repository.
+
+The zkSync native Account Abstraction implementation is fully functional and tested.
+
+The repository will be split into separate Ethereum and zkSync implementations in a future update.
 ---
 
 ## 🚀 Features
